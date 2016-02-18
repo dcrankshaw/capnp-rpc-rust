@@ -14,13 +14,24 @@ documentation = "http://docs.capnproto-rust.org/capnp_rpc/"
 name = "capnp_rpc"
 path = "src/lib.rs"
 
-[build-dependencies]
-capnpc = "0.6"
+[build-dependencies.capnpc]
+path = "https://github.com/dcrankshaw/capnpc-rust"
 
-[dependencies]
-gj = "0.1"
-capnp = {version = "0.6.1", features = ["rpc"]}
-capnp-gj = "0.1"
+# [dependencies]
+# gj = "0.1"
+# capnp = {version = "0.6.1", features = ["rpc"]}
+# capnp-gj = "0.1"
+
+
+[dependencies.capnp]
+features = ["rpc"]
+git = "https://github.com/dcrankshaw/capnproto-rust"
+
+[dependencies.gj]
+path = "https://github.com/dcrankshaw/gj"
+
+[dependencies.capnp-gj]
+path = "https://github.com/dcrankshaw/capnp-gj"
 
 
 
