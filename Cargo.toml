@@ -28,10 +28,10 @@ features = ["rpc"]
 git = "https://github.com/dcrankshaw/capnproto-rust"
 
 [dependencies.gj]
-path = "https://github.com/dcrankshaw/gj"
+git = "https://github.com/dcrankshaw/gj"
 
 [dependencies.capnp-gj]
-path = "https://github.com/dcrankshaw/capnp-gj"
+git = "https://github.com/dcrankshaw/capnp-gj"
 
 
 
